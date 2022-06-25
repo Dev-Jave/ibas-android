@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_toolbar"
+        app:title="IBAS"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
@@ -17,18 +17,8 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="45dp"
-                android:background="@drawable/img_logo"/>
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_container"
@@ -39,7 +29,7 @@
         app:layout_constraintBottom_toTopOf="@id/bn_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -50,9 +40,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:labelVisibilityMode="labeled"
-        app:itemIconTint="@color/nav_selector"
-        app:itemTextColor="@color/nav_selector"
-        app:itemBackground="@android:color/white"
         app:menu="@menu/bottom_nav_menu" />
 
 

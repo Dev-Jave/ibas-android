@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IBAS Application</string>
+    <string name="home">home</string>
+    <string name="lecture">lecture</string>
+    <string name="profile">profile</string>
+    <string name="project">project</string>
 </resources>

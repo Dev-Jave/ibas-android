@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/icon_home_off"
+        android:enabled="true"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/lectureFragment"
+        android:icon="@drawable/icon_lecture_off"
+        android:enabled="true"
+        android:title="강의"/>
+
+    <item
+        android:id="@+id/projectFragment"
+        android:icon="@drawable/icon_project_off"
+        android:enabled="true"
+        android:title="프로젝트"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/icon_profile_off"
+        android:enabled="true"
+        android:title="프로필"/>
+
+
+
+</menu>
